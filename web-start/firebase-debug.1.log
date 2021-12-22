@@ -1,0 +1,76 @@
+[debug] [2021-12-22T16:14:31.219Z] ----------------------------------------------------------------------
+[debug] [2021-12-22T16:14:31.221Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --except functions
+[debug] [2021-12-22T16:14:31.222Z] CLI Version:   10.0.1
+[debug] [2021-12-22T16:14:31.222Z] Platform:      win32
+[debug] [2021-12-22T16:14:31.222Z] Node Version:  v16.13.1
+[debug] [2021-12-22T16:14:31.223Z] Time:          Wed Dec 22 2021 17:14:31 GMT+0100 (West Africa Standard Time)
+[debug] [2021-12-22T16:14:31.223Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-22T16:14:31.283Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-22T16:14:31.284Z] > authorizing via signed-in user (kareemmajid86@gmail.com)
+[debug] [2021-12-22T16:14:31.284Z] [iam] checking project friendlychat-bae0f for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2021-12-22T16:14:31.286Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-22T16:14:31.287Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-22T16:14:52.387Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-12-22T16:14:52.389Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-bae0f [none]
+[debug] [2021-12-22T16:14:53.051Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-bae0f 200
+[debug] [2021-12-22T16:14:53.052Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-bae0f {"projectId":"friendlychat-bae0f","projectNumber":"784355716455","displayName":"FriendlyChat","name":"projects/friendlychat-bae0f","resources":{"hostingSite":"friendlychat-bae0f","storageBucket":"friendlychat-bae0f.appspot.com","locationId":"europe-west2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'friendlychat-bae0f'...
+[info] 
+[info] i  deploying storage, firestore, hosting 
+[debug] [2021-12-22T16:14:53.056Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-22T16:14:53.056Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-22T16:14:53.499Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 22 Dec 2021 16:14:53 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-22T16:14:53.578Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/friendlychat-bae0f  
+ 
+[info] 
+
+There was an issue deploying your functions. Verify that your project has a Google App Engine instance setup at https://console.cloud.google.com/appengine and try again. If this issue persists, please contact support.
+[debug] [2021-12-22T16:15:14.735Z] Error: connect ETIMEDOUT 216.58.223.234:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.223.234:443
+[debug] [2021-12-22T16:23:13.569Z] ----------------------------------------------------------------------
+[debug] [2021-12-22T16:23:13.571Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --except functions
+[debug] [2021-12-22T16:23:13.572Z] CLI Version:   10.0.1
+[debug] [2021-12-22T16:23:13.572Z] Platform:      win32
+[debug] [2021-12-22T16:23:13.572Z] Node Version:  v16.13.1
+[debug] [2021-12-22T16:23:13.573Z] Time:          Wed Dec 22 2021 17:23:13 GMT+0100 (West Africa Standard Time)
+[debug] [2021-12-22T16:23:13.573Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-22T16:23:13.648Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-22T16:23:13.649Z] > authorizing via signed-in user (kareemmajid86@gmail.com)
+[debug] [2021-12-22T16:23:13.649Z] [iam] checking project friendlychat-bae0f for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2021-12-22T16:23:13.651Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-bae0f:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2021-12-22T16:23:15.170Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Dec 2021 16:23:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1102","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-22T16:23:15.172Z] > refreshing access token with scopes: []
+[debug] [2021-12-22T16:23:15.173Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-22T16:23:15.609Z] <<< HTTP RESPONSE 200 {"date":"Wed, 22 Dec 2021 16:23:16 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-22T16:23:15.771Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-bae0f [none]
+[debug] [2021-12-22T16:23:16.347Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-bae0f 200
+[debug] [2021-12-22T16:23:16.347Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-bae0f {"projectId":"friendlychat-bae0f","projectNumber":"784355716455","displayName":"FriendlyChat","name":"projects/friendlychat-bae0f","resources":{"hostingSite":"friendlychat-bae0f","storageBucket":"friendlychat-bae0f.appspot.com","locationId":"europe-west2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'friendlychat-bae0f'...
+[info] 
+[info] i  deploying storage, firestore, hosting 
+[debug] [2021-12-22T16:23:16.352Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-22T16:23:16.352Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-22T16:23:16.703Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 22 Dec 2021 16:23:17 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-22T16:23:16.836Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/friendlychat-bae0f  
+ 
+[debug] [2021-12-22T16:23:17.925Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Dec 2021 16:23:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2021-12-22T16:23:17.927Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/friendlychat-bae0f:test  
+ {"source":{"files":[{"name":"storage.rules","content":"rules_version = '2';\r\n\r\n// Returns true if the uploaded file is an image and its size is below the given number of MB.\r\nfunction isImageBelowMaxSize(maxSizeMB) {\r\n  return request.resource.size < maxSizeMB * 1024 * 1024\r\n      && request.resource.contentType.matches('image/.*');\r\n}\r\n\r\nservice firebase.storage {\r\n  match /b/{bucket}/o {\r\n    match /{userId}/{messageId}/{fileName} {\r\n      allow write: if request.auth != null && request.auth.uid == userId && isImageBelowMaxSize(5);\r\n      allow read;\r\n    }\r\n  }\r\n}"}]}}
+[debug] [2021-12-22T16:23:39.106Z] Error: connect ETIMEDOUT 216.58.223.202:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.223.202:443
